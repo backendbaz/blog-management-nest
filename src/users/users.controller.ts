@@ -1,14 +1,21 @@
-import { Controller, Get, Post } from '@nestjs/common';
+import { Controller, Get, Post, Query, Param, Body } from '@nestjs/common';
 
 @Controller('users')
 export class UsersController {
-  @Get()
-  public getUsers() {
+  @Get('{/:id}')
+  public getUsers(
+    @Param('id') id: string,
+    @Query('limit') limit: string,
+    @Query('offset') offset: string,
+  ) {
+    console.log(`id: ${id}`);
+    console.log(`limit: ${limit} - offset: ${offset}`);
     return 'This action returns all users.';
   }
 
   @Post()
-  public createUsers() {
+  public createUsers(@Body() body: any) {
+    console.log(body);
     return 'This action creates a user.';
   }
 }
