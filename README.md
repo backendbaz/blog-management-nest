@@ -10,6 +10,7 @@ A complete, modern, and scalable REST API service for blog management, built wit
 - Complete blog post management (CRUD operations)
 - Modular and maintainable architecture
 - Data Validation and Transformation (Pipes and DTOs)
+- Using Mapped Types to avoid Code Duplication
 
 # 🛠️ Project Setup
 
