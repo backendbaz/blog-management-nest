@@ -9,16 +9,17 @@ import {
   DefaultValuePipe,
 } from '@nestjs/common';
 import { CreateUserDto } from './dtos/create-user.dto';
+import { GetUsersParamDto } from './dtos/get-users-param.dto';
 
 @Controller('users')
 export class UsersController {
   @Get('{/:id}')
   public getUsers(
-    @Param('id', ParseIntPipe) id: number | undefined,
+    @Param() getUsersParamDto: GetUsersParamDto,
     @Query('limit', new DefaultValuePipe(10), ParseIntPipe) limit: number,
     @Query('offset', new DefaultValuePipe(1), ParseIntPipe) offset: number,
   ) {
-    console.log(`id: ${id} -> ${typeof id}`);
+    console.log(getUsersParamDto);
     console.log(`limit: ${limit} - offset: ${offset}`);
     return 'This action returns all users.';
   }
