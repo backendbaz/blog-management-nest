@@ -26,4 +26,15 @@ export class UsersService {
       },
     ];
   }
+
+  public findOneById(id: number) {
+    console.log(id);
+    return {
+      id: 25,
+      firstName: 'Amirhossein',
+      lastName: 'Emadi',
+      email: 'amir@example.ir',
+      password: 'pass@1234',
+    };
+  }
 }
