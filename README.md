@@ -2,6 +2,9 @@
 
 A complete, modern, and scalable REST API service for blog management, built with the **[NestJS](https://nestjs.com)** framework.
 
+- **🌐 My first REST API project - `#1`**
+- **🐈 My first NestJS project - `#1`**
+
 # ✨ Key Features
 
 - Complete blog post management (CRUD operations)
