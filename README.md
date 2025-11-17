@@ -11,6 +11,8 @@ A complete, modern, and scalable REST API service for blog management, built wit
 - Modular and maintainable architecture
 - Data Validation and Transformation (Pipes and DTOs)
 - Using Mapped Types to avoid Code Duplication
+- Using Dependency Injection (DI) - declare, connect and inject
+- Using Services to isolate business logic
 
 # 🛠️ Project Setup
 
