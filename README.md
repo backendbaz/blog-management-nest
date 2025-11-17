@@ -6,7 +6,7 @@ A complete, modern, and scalable REST API service for blog management, built wit
 
 - Complete blog post management (CRUD operations)
 - Modular and maintainable architecture
-- Validation and Transformation (Pipes)
+- Data Validation and Transformation (Pipes)
 
 # 🛠️ Project Setup
 
