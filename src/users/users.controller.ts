@@ -24,9 +24,7 @@ export class UsersController {
     @Query('limit', new DefaultValuePipe(10), ParseIntPipe) limit: number,
     @Query('offset', new DefaultValuePipe(1), ParseIntPipe) offset: number,
   ) {
-    console.log(getUsersParamDto);
-    console.log(`limit: ${limit} - offset: ${offset}`);
-    return 'This action returns all users.';
+    return this.usersService.findAll(getUsersParamDto, limit, offset);
   }
 
   @Post()
