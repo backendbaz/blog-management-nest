@@ -1,12 +1,20 @@
-**Blog Management - NestJs REST API**
+**🚀 Blog Management - NestJs REST API**
 
-# Project Setup
+A complete, modern, and scalable REST API service for blog management, built with the **[NestJS](https://nestjs.com)** framework.
+
+# ✨ Key Features
+
+- Complete blog post management (CRUD operations)
+- Modular and maintainable architecture
+- Validation and Transformation (Pipes)
+
+# 🛠️ Project Setup
 
 ```bash
 pnpm install
 ```
 
-# Compile and Run the project
+# 🔄 Compile and Run the project
 
 ```bash
 # development
@@ -19,7 +27,7 @@ pnpm run start:dev
 pnpm run start:prod
 ```
 
-# Run Tests
+# 🧪 Running Tests
 
 ```bash
 # unit tests
