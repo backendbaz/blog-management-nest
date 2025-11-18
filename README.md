@@ -13,6 +13,7 @@ A complete, modern, and scalable REST API service for blog management, built wit
 - Using Mapped Types to avoid Code Duplication
 - Using Dependency Injection (DI) - declare, connect and inject
   - Intra-Modular DI (Users Service inside Posts Service)
+  - Circular DI (between Auth Service and Users Service)
 - Using Services to isolate business logic
 
 # 🛠️ Project Setup
